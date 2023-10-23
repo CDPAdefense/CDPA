@@ -2,11 +2,11 @@
 
 Here, we implement CDPA against ROG attacks.
 <img src="defense.jpg" width=600>
-#### Prerequisites
+#### Prerequisites for defensing ROG attack
 
 - install Python packages
     ```bash
-    pip3 install -r requirements.txt
+    pip install -r requirements.txt
     ```
 - Download the pretrained models and put them under `model_zoos` ([link](https://huggingface.co/erickyue/rog_modelzoo/tree/main)) （These models retrived from ROG attack）
 
@@ -20,3 +20,16 @@ Here, we implement CDPA against ROG attacks.
 
 
     You can change the settings in the configuration file. 
+
+#### Prerequisite for utility experiments
+1. PyTorch=1.8.0: https://pytorch.org
+2. scipy
+3. tqdm
+4. matplotlib
+5. torchinfo
+6. TensorboardX: https://github.com/lanpa/tensorboardX
+- For utility experiments:
+please go to the utility folder, run
+    ```bash
+    python main.py
+    ```
